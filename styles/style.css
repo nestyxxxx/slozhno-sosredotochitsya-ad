@@ -255,8 +255,6 @@
   margin-bottom: 10px;
 }
 
-/* Медиа-запросы */
-
 @media (width >= 768px) {
   .main-title {
     font-size: clamp(7.5rem, 0.563rem + 14.453vw, 15rem);
@@ -432,10 +430,22 @@
   }
 
   .theme-light .main-title {
+<<<<<<< HEAD
     text-shadow: 4px 4px 0 #ff0070;
   }
 
   .theme-light .footer-main-title {
     text-shadow: 2px 2px 0 #ff0070;
   }
+=======
+    text-shadow: 4px 4px 0 #ff0070; 
+    
+  }
+
+  .theme-light .footer-main-title {
+    text-shadow: 2px 2px 0 #ff0070; 
+    
+  }
+  
+>>>>>>> 1c1d2b31a8b5e44afcb19f1196289274e12f3675
 }
