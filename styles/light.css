@@ -1,5 +1,5 @@
 :root.theme-light {
-  --accent-color: var(--basic-pink);
+  --accent-color: var(--real-red);
   --title-color: var(--title-pink);
   --page-background-color: var(--almost-white-background);
   --header-text-background-color: var(--basic-pink);
