@@ -21,7 +21,7 @@
 
 .main-title {
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   line-height: 0.825;
   margin-left: var(--header-margin-left);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -127,7 +127,7 @@
   background-color: var(--rec-color);
   margin-left: 42px;
   margin-top: 18px;
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  box-shadow: 0 0 2px 2px var(--accent-color);
   display: none;
 }
 
@@ -230,7 +230,7 @@
 
 .text-link {
   text-decoration: none;
-  text-shadow: 2px 1px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .text-link:hover {
@@ -321,7 +321,7 @@
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 'why-question why-answers';
     gap: 0;
-  }
+}
 
   .what-block {
     grid-template-columns: 1fr;
@@ -411,7 +411,7 @@
   }
 
   .what-question {
-    width: 30%;
+    width: 70%;
     grid-area: what-question;
   }
 
@@ -420,7 +420,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     grid-area: what-answers;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .how-block {
