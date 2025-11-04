@@ -21,18 +21,10 @@
 
 .main-title {
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   line-height: 0.825;
   margin-left: var(--header-margin-left);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-}
-
-.footer-main-title {
-  text-shadow: 2px 2px 0 var(--accent-color);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-top: 32px;
 }
 
 .header-desc {
@@ -201,6 +193,13 @@
   color: var(--question-color);
 }
 
+.footer-main-title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
 .card-title {
   background-color: var(--answer-title-background-color);
   color: var(--answer-title-color);
@@ -310,7 +309,6 @@
   }
 
   .what-question {
-    grid-column: 1 / 3;
     width: 30%;
     margin-top: 30px;
   }
@@ -323,15 +321,7 @@
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 'why-question why-answers';
     gap: 0;
-  }
-
-  .why-question {
-    grid-column: 1 / 2;   
-    width: 95%;         
-    line-height: 1.3;    
-    white-space: normal;  
-    word-break: normal;   
-  }
+}
 
   .what-block {
     grid-template-columns: 1fr;
@@ -341,17 +331,12 @@
   .how-block {
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 'how-question how-answers';
-    gap: 0px;
+    gap: 20px;
     margin-top: 61px;
   }
 
-  .how-answers .card-text {
-    max-width: 100%;   
-    line-height: 1.3;   
-  }
-
   .gallery-block {
-    margin-top: 80px;
+    margin-top: 78px;
   }
 
   .gallery-title {
@@ -365,7 +350,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .rec_empty {
     --rec_empty_x_pos: 40px;
   }
@@ -426,6 +411,11 @@
     margin-top: 50px;
   }
 
+  .what-question {
+    width: 100%;
+    grid-area: what-question;
+  }
+
   .what-answers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -437,13 +427,10 @@
   .how-block {
     gap: 0;
   }
+}
 
-  .theme-light .main-title {
-    text-shadow: 4px 4px 0 #ff0070;
-  }
-
+@media (min-width: 1024px) {
   .theme-light .footer-main-title {
     text-shadow: 2px 2px 0 #ff0070;
   }
 }
-
