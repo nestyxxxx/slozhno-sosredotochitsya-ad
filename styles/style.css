@@ -32,14 +32,13 @@
   height: 100%;
   display: flex;
   align-items: center;
+  margin-top: 32px;
 }
 
 .header-desc {
   background-color: var(--header-text-background-color);
   color: var(--header-text-color);
   margin: var(--decoration-gap);
-  margin-left: auto;
-  max-width: 50%;
   font-weight: bold;
   font-size: inherit;
 }
@@ -115,7 +114,7 @@
   color: var(--accent-color);
   width: 10px;
   top: calc(var(--decoration-gap) - 10px);
-  right: calc(var(--decoration-gap) + 10px);
+  right: calc(var(--decoration-gap) + 50px);
 }
 
 .rec_empty::before {
@@ -160,7 +159,7 @@
 }
 
 .how-block {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .main-advice-title {
@@ -174,7 +173,7 @@
 .image-gallery {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 0;
 }
 
 .gallery-pic {
@@ -192,10 +191,7 @@
 
 .footer {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  height: max(100vh, var(--min-height));
 }
 
 .block-question {
@@ -337,7 +333,7 @@
   .how-block {
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 'how-question how-answers';
-    gap: 20px;
+    gap: 0px;
     margin-top: 61px;
   }
 
@@ -430,22 +426,11 @@
   }
 
   .theme-light .main-title {
-<<<<<<< HEAD
     text-shadow: 4px 4px 0 #ff0070;
   }
 
   .theme-light .footer-main-title {
     text-shadow: 2px 2px 0 #ff0070;
   }
-=======
-    text-shadow: 4px 4px 0 #ff0070; 
-    
-  }
-
-  .theme-light .footer-main-title {
-    text-shadow: 2px 2px 0 #ff0070; 
-    
-  }
-  
->>>>>>> 1c1d2b31a8b5e44afcb19f1196289274e12f3675
 }
+
