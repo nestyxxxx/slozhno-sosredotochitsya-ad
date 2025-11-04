@@ -1,4 +1,19 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --real-red: #ff0070;
+  --approximately-black: #000028;
+  --almost-black: #353430;
+  --basic-pink: #FF8DCB;
+  --title-pink: #FFC2E6;
+  --almost-white-background: #FFF1F7;
+
+  --project-font-family: "IBM Plex Mono", "Arial", sans-serif;
+  --regular-font-size: 18px;
+  --regular-line-height: 100%;
+
+  --decoration-gap: clamp(10px, 2.65vw, 20px);
+  --regular-gap: 10px;
+  --corner-thickness: 1px;
+  --header-margin-left: min(10px, 20px - 2.6vw);
+  --section-child-margin: 40px;
+  --min-height: 668px;
+}
