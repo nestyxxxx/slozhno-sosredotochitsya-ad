@@ -431,10 +431,12 @@
 @media (min-width: 1024px) {
   .theme-light .main-title {
     text-shadow: 4px 4px 0 #ff0070; 
+    
   }
 
   .theme-light .footer-main-title {
     text-shadow: 2px 2px 0 #ff0070; 
+    
   }
   
 }
