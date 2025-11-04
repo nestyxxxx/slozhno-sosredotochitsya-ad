@@ -358,6 +358,7 @@
   .header {
     --min-height: 768px;
     margin-block-end: 0;
+    background: none;
   }
 
   .footer {
@@ -411,7 +412,7 @@
   }
 
   .what-question {
-    width: 70%;
+    width: 100%;
     grid-area: what-question;
   }
 
@@ -425,5 +426,11 @@
 
   .how-block {
     gap: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .theme-light .footer-main-title {
+    text-shadow: 2px 2px 0 #ff0070;
   }
 }
