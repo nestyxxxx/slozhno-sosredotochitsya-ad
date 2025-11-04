@@ -325,9 +325,9 @@
     gap: 0;
   }
 
-    .why-question {
+  .why-question {
     grid-column: 1 / 2;   
-    width: 80%;         
+    width: 95%;         
     line-height: 1.3;    
     white-space: normal;  
     word-break: normal;   
@@ -345,8 +345,13 @@
     margin-top: 61px;
   }
 
+  .how-answers .card-text {
+    max-width: 100%;   
+    line-height: 1.3;   
+  }
+
   .gallery-block {
-    margin-top: 78px;
+    margin-top: 80px;
   }
 
   .gallery-title {
