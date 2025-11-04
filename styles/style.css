@@ -21,14 +21,10 @@
 
 .main-title {
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   line-height: 0.825;
   margin-left: var(--header-margin-left);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-}
-
-.footer-main-title{
-  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .header-desc {
@@ -219,6 +215,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-top: 20px;
 }
 
 .advice-subtitle {
@@ -384,7 +381,6 @@
 
   .why-question {
     margin-top: 20px;
-    margin-left: 20px;
   }
 
   .why-answers {
