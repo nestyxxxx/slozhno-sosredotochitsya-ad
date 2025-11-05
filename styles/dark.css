@@ -5,10 +5,10 @@
   --header-text-background-color: var(--real-red);
   --header-text-color: var(--approximately-black);
   --question-background-color: var(--approximately-black);
-  --question-color: var(--real-red);
-  --answer-title-background-color: var(--real-red);
   --answer-title-color: var(--approximately-black);
   --answer-text-background-color: var(--approximately-black);
+  --question-color: var(--real-red);
+  --answer-title-background-color: var(--real-red);
   --answer-text-color: #f1b2ce;
   --advice-title-background-color: var(--real-red);
   --advice-title-color: var(--approximately-black);
@@ -31,7 +31,7 @@
     --answer-title-background-color: var(--real-red);
     --answer-title-color: var(--approximately-black);
     --answer-text-background-color: var(--approximately-black);
-    --answer-text-color: #F1B2CE;
+    --answer-text-color: #f1b2ce;
     --advice-title-background-color: var(--real-red);
     --advice-title-color: var(--approximately-black);
     --button-color: var(--real-red);
@@ -40,9 +40,19 @@
     --background-image: url("../images/cover-image-dark.png");
     --deco-color: var(--real-red);
   }
-
-  :root .rec_empty::before,
-  :root .rec_empty::after {
+  .rec_empty::before {
     display: inline-block;
   }
+
+  .rec_empty::after {
+    display: inline-block;
+  }
+}
+
+.theme-dark .rec_empty::before {
+  display: inline-block;
+}
+
+.theme-dark .rec_empty::after {
+  display: inline-block;
 }
